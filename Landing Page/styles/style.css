@@ -240,17 +240,48 @@ h1 span {
   border: 2px solid #438496;
 }
 
+#img_container_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 38rem;
+  background: url("https://images.unsplash.com/photo-1589645542373-ac945f0da4cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") no-repeat;
+}
+
+#intro_text {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#intro_text h2 {
+  color: #438496;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: .5rem;
+}
+
+#intro_text p {
+  padding: .5rem;
+}
+
 /* Cards */
 .card {
-  width: 30%;
+  width: 35%;
   background-color: #438496;
   color: #000;
   text-align: center;
   margin: 0 1rem;
   border: 2px solid #cd5360;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,5 +311,80 @@ footer p {
   text-align: center;
   margin: 0 auto;
   color: wheat;
+}
+
+.course_card {
+  width: 50%;
+  color: wheat;
+  text-align: center;
+  margin: 0 1rem;
+  border: 2px solid #cd5360;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.course_card h3 {
+  font-size: 1.5rem;
+}
+
+/* Media Queries - Breakpoints: 1024, 800, 500px */
+@media only screen and (max-width: 1024px) {
+  .img_container {
+    background: url("https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80") no-repeat;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    border: none;
+  }
+  nav li {
+    display: block;
+  }
+  nav li a {
+    text-align: center;
+    margin: .25rem;
+    border: 1px solid #438496;
+  }
+  nav li a:hover {
+    border: 1px solid #cd5360;
+  }
+  .img_container {
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") no-repeat;
+  }
+  #card_container {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #card_container .card {
+    width: 80%;
+    margin: .5rem auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img_container {
+    width: 100%;
+    display: noness;
+  }
 }
 /*# sourceMappingURL=style.css.map */
