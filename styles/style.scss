@@ -154,7 +154,7 @@ body {
     margin: 0 auto;
     background-color: #000000;
     color: white;
-    border: 1px solid #cd5360;
+    
 }
 
 header {
@@ -164,16 +164,16 @@ header {
 /*Navigation Bar */
 nav {
     width: 100%;
-    margin: 0 15rem;    
+    margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: space-evenly;
-    display: block;
+    justify-content: center;
     
 
 
+
     ul {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         list-style: none;
     }
@@ -185,7 +185,7 @@ nav {
 
     a {
         display: block;
-        font-size: 2rem;
+        font-size: 1.25rem;
         padding: 6px 12px;
         text-decoration: none;
         color: $secondary-color;
@@ -326,6 +326,7 @@ footer {
     height: 38rem;
     background: url("https://images.unsplash.com/photo-1589645542373-ac945f0da4cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") no-repeat;
 }
+
 #intro_text {
     width: 50%;
     margin: 0 auto;
@@ -344,6 +345,7 @@ footer {
         padding: 2.5rem 0;
     }
 }
+
 .course_card {
     width: 50%;
     color: wheat;
@@ -362,18 +364,11 @@ footer {
 /* Media Queries - Breakpoints: 1024, 800, 500px */
 
 @media only screen and (max-width: 1024px) {
-    .img_container {
-        background: url('https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80') no-repeat;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    body {
-        width: 100%;
-        border: none;
-    }
-
     nav {
+        width: 80%;
+        ul {
+            flex-wrap: nowrap;
+        }
         li {
             display: block;
 
@@ -381,6 +376,7 @@ footer {
                 text-align: center;
                 margin: .25rem;
                 border: 1px solid $secondary-color;
+                font-size: 1rem;
             }
 
             a:hover {
@@ -388,14 +384,62 @@ footer {
             }
         }
     }
-
+   
     .img_container {
         width: 100%;
+        background: url('https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80') no-repeat;
+    }
+    #card_container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        
+        
+
+        .card {
+            width: 80%;
+            margin: .5rem .25rem;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+
+    nav {
+        width: 80%;
+        ul {
+            flex-wrap: nowrap;
+        }
+        li {
+            display: block;
+
+            a {
+                text-align: center;
+                margin: .25rem;
+                border: 1px solid $secondary-color;
+                font-size: 1rem;
+            }
+
+            a:hover {
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+    .container {
+        padding: 0;
+    }
+
+    .img_container {
+        
         background: url('https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') no-repeat;
     }
 
     #card_container {
         width: 80%;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
@@ -414,8 +458,8 @@ footer {
 @media only screen and (max-width: 500px) {
 
     .img_container {
-        width: 100%;
-        display: noness;
+        width: 80%;
+        display: none;
     }
 
 }

@@ -153,7 +153,7 @@ header {
 /*Navigation Bar */
 nav {
   width: 100%;
-  margin: 0 15rem;
+  margin: 0 auto;
   padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +161,6 @@ nav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  display: block;
 }
 
 nav ul {
@@ -245,6 +244,19 @@ h1 span {
   padding: 2.5rem 0;
 }
 
+#intro_text a {
+  color: white;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#intro_text a:hover {
+  background-color: #cd5360;
+}
+
 /* Cards */
 .course_card {
   width: 50%;
@@ -267,11 +279,23 @@ h1 span {
   font-size: 1.5rem;
 }
 
+/* Footer */
+footer p {
+  text-align: center;
+  margin: 0 auto;
+  color: wheat;
+}
+
 /* Media Queries - Breakpoints: 1024, 800, 500px */
 @media only screen and (max-width: 1024px) {
   .img_container {
     background: url("https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80") no-repeat;
   }
+}
+
+body {
+  width: 80%;
+  border: none;
 }
 
 @media only screen and (max-width: 800px) {

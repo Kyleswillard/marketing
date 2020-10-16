@@ -141,7 +141,6 @@ body {
   margin: 0 auto;
   background-color: #000000;
   color: white;
-  border: 1px solid #cd5360;
 }
 
 header {
@@ -153,19 +152,18 @@ header {
 /*Navigation Bar */
 nav {
   width: 100%;
-  margin: 0 15rem;
+  margin: 0 auto;
   padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -176,7 +174,7 @@ nav li {
 
 nav a {
   display: block;
-  font-size: 2rem;
+  font-size: 1.25rem;
   padding: 6px 12px;
   text-decoration: none;
   color: #438496;
@@ -360,15 +358,12 @@ footer p {
 
 /* Media Queries - Breakpoints: 1024, 800, 500px */
 @media only screen and (max-width: 1024px) {
-  .img_container {
-    background: url("https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80") no-repeat;
+  nav {
+    width: 80%;
   }
-}
-
-@media only screen and (max-width: 800px) {
-  body {
-    width: 100%;
-    border: none;
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   nav li {
     display: block;
@@ -377,16 +372,59 @@ footer p {
     text-align: center;
     margin: .25rem;
     border: 1px solid #438496;
+    font-size: 1rem;
   }
   nav li a:hover {
     border: 1px solid #cd5360;
   }
   .img_container {
     width: 100%;
+    background: url("https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80") no-repeat;
+  }
+  #card_container {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #card_container .card {
+    width: 80%;
+    margin: .5rem .25rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav li {
+    display: block;
+  }
+  nav li a {
+    text-align: center;
+    margin: .25rem;
+    border: 1px solid #438496;
+    font-size: 1rem;
+  }
+  nav li a:hover {
+    border: 1px solid #cd5360;
+  }
+  .container {
+    padding: 0;
+  }
+  .img_container {
     background: url("https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80") no-repeat;
   }
   #card_container {
     width: 80%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -408,8 +446,8 @@ footer p {
 
 @media only screen and (max-width: 500px) {
   .img_container {
-    width: 100%;
-    display: noness;
+    width: 80%;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
