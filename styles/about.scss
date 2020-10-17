@@ -273,6 +273,7 @@ h1 {
     display: flex;
     margin: 2rem auto;
 }
+
 .course_card {
     width: 45%;
     color: wheat;
@@ -324,20 +325,25 @@ footer {
     body {
         width: 100%;
     }
+
     #img_container {
         width: 100%;
     }
+
     #text_container {
         width: 50%;
     }
+
     .container {
         flex-direction: column;
     }
+
     .card_container {
         flex-direction: column;
         justify-content: center;
-        
+
     }
+
     .course_card {
         width: 50%;
         margin: 1rem 25%;
@@ -347,9 +353,11 @@ footer {
 @media only screen and (max-width: 800px) {
     nav {
         width: 80%;
+
         ul {
             flex-wrap: nowrap;
         }
+
         li {
             display: block;
 
@@ -365,6 +373,7 @@ footer {
             }
         }
     }
+
     #img_container {
         width: 80%;
     }
