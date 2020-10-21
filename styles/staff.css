@@ -203,11 +203,158 @@ h1 span {
   color: #cd5360;
 }
 
-/* Flexbox Container */
-.container {
+#card_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5rem 5rem;
+  margin: 0 auto;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
+
+#card_container h2 {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+#card_container h2 fab {
+  padding: .25rem;
+}
+
+#card_container .staff_box {
+  border: 1px solid #cd5360;
+  margin: .5rem;
+}
+
+#card_container .tech_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#card_container #marketing_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#card_container #marketing_container img {
+  width: 10rem;
+  height: auto;
+  padding: .25rem;
+}
+
+#card_container #front_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#card_container #front_container img {
+  width: 10rem;
+  height: auto;
+  margin: .25rem;
+}
+
+#card_container #back_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: .25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#card_container #back_container img {
+  width: 10rem;
+  height: auto;
+  padding: .25rem;
+}
+
+#card_container #ios_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: .25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#card_container #ios_container img {
+  width: 10rem;
+  height: auto;
+  padding: .25rem;
+}
+
+/* Media Queries - Breakpoints: 1024, 800, 500px */
+@media only screen and (max-width: 1024px) {
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav li {
+    display: block;
+  }
+  nav li a {
+    text-align: center;
+    margin: .25rem;
+    border: 1px solid #438496;
+    font-size: 1rem;
+  }
+  nav li a:hover {
+    border: 1px solid #cd5360;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav li {
+    display: block;
+  }
+  nav li a {
+    text-align: center;
+    margin: .25rem;
+    border: 1px solid #438496;
+    font-size: 1rem;
+  }
+  nav li a:hover {
+    border: 1px solid #cd5360;
+  }
+}
+
+/* No need for 500PX Breakpoint*/
 /*# sourceMappingURL=staff.css.map */

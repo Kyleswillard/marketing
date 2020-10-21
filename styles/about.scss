@@ -292,6 +292,7 @@ h1 {
 /* Text Section */
 #text_container {
     height: auto;
+    width: 100%;
     margin: 0 auto;
     padding: .25rem;
     background-color: wheat;
@@ -299,7 +300,7 @@ h1 {
     display: flex;
 
     p {
-        width: auto;
+        width: 100%;
         padding: 1.5rem 0;
         text-align: center;
         color: black;
