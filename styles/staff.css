@@ -310,4 +310,51 @@ h1 span {
   height: auto;
   padding: .25rem;
 }
+
+/* Media Queries - Breakpoints: 1024, 800, 500px */
+@media only screen and (max-width: 1024px) {
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav li {
+    display: block;
+  }
+  nav li a {
+    text-align: center;
+    margin: .25rem;
+    border: 1px solid #438496;
+    font-size: 1rem;
+  }
+  nav li a:hover {
+    border: 1px solid #cd5360;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav li {
+    display: block;
+  }
+  nav li a {
+    text-align: center;
+    margin: .25rem;
+    border: 1px solid #438496;
+    font-size: 1rem;
+  }
+  nav li a:hover {
+    border: 1px solid #cd5360;
+  }
+}
+
+/* No need for 500PX Breakpoint*/
 /*# sourceMappingURL=staff.css.map */

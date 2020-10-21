@@ -231,12 +231,14 @@ h1 {
         fab {
             padding: .25rem;
         }
-        
+
     }
+
     .staff_box {
         border: 1px solid $primary-color;
         margin: .5rem;
     }
+
     .tech_box {
         display: flex;
         justify-content: space-evenly;
@@ -251,15 +253,16 @@ h1 {
             width: 10rem;
             height: auto;
             padding: .25rem;
-        }  
-        
+        }
+
     }
+
     #front_container {
         display: flex;
         padding: .25rem;
         justify-content: center;
 
-        
+
 
         img {
             width: 10rem;
@@ -267,10 +270,11 @@ h1 {
             margin: .25rem;
         }
 
-        
-      
-        
+
+
+
     }
+
     #back_container {
         display: flex;
         flex-direction: row;
@@ -282,8 +286,9 @@ h1 {
             height: auto;
             padding: .25rem;
         }
-        
+
     }
+
     #ios_container {
         display: flex;
         flex-direction: row;
@@ -295,6 +300,66 @@ h1 {
             height: auto;
             padding: .25rem;
         }
-        
+
     }
 }
+
+/* Media Queries - Breakpoints: 1024, 800, 500px */
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        width: 80%;
+
+        ul {
+            flex-wrap: nowrap;
+        }
+
+        li {
+            display: block;
+
+            a {
+                text-align: center;
+                margin: .25rem;
+                border: 1px solid $secondary-color;
+                font-size: 1rem;
+            }
+
+            a:hover {
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    nav {
+        width: 80%;
+
+        ul {
+            flex-wrap: nowrap;
+        }
+
+        li {
+            display: block;
+
+            a {
+                text-align: center;
+                margin: .25rem;
+                border: 1px solid $secondary-color;
+                font-size: 1rem;
+            }
+
+            a:hover {
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+}
+
+
+
+/* No need for 500PX Breakpoint*/
