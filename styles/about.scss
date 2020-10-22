@@ -271,7 +271,11 @@ h1 {
 /* Cards */
 .card_container {
     display: flex;
-    margin: 2rem auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .course_card {
@@ -292,7 +296,7 @@ h1 {
 /* Text Section */
 #text_container {
     height: auto;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding: .25rem;
     background-color: wheat;
